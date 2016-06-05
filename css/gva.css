@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div.horizontal {
+	width:111.3%;
+	height:63px;
+}
+
+div.horizontal ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+div.horizontal li.left {
+	float:left;
+}
+
+div.horizontal li.right {
+	float:right;
+}
+
+div.horizontal a {
+	display:block;
+	width:100;
+}
+
+div.horizontal a:link,div.horizontal a:visited {
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#5e727f;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+div.horizontal a:hover,div.horizontal a:active {
+	background-color:#374F60;
+}
+
+ul.facts {
+    list-style-type: circle;
+}
+	
+body {
+	width:value;
+	margin:auto;
+	background-color: #374F60; 
+	color: #374F60;
+}
+img {
+	border:2px solid #021a40;
+}
+h3 {
+  display:inline;
+}
+#gva {
+	width:value;
+	margin:auto;
+	background-color: #7D9DB4;
+	width: 875px;
+	height: 1280px;
+	border:2px solid #989898;
+}
+
+#topContent {
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:750px;
+	height:60px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+	top: 30px;
+	margin-bottom: 30px;
+}
+#mainContent {
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:750px;
+	height:255px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+	top: 30px;
+}
+#leftContent {
+	float: left;
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:325px;
+	height:270px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+#rightContent {
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:325px;
+	height:270px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+	top: 100px;
+	margin-top: 30px;
+	margin-left: 425px;
+}
+#bottomContent {
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:750px;
+	height:60px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:25px;
+	top: 30px;
+	margin-top:30px;
+}
+#navBar {
+	display: inline;
+	position: relative;
+	left: -42px;
+	top: 44px;
+	z-index: 1;
+    
+}
+
+#leftImage {
+	margin-left: 0px;
+	position: relative;
+	top: 20px; 
+}
+
+#midImage {
+	margin-left: 216px;
+	position: relative;
+	top: -165px; 
+	
+}
+
+#rightImage {
+	margin-left: 630px;
+	position: relative;
+	top: -350px; 
+}
+
+#content {
+	width:value;
+	margin:auto;
+	position: relative;
+	top: -30px;
+	width:830px;
+	
+}
+
+#header {
+	width:value;
+	margin:auto;
+	
+	width:836px;
+	height:400px;
+	
+}
+
+#banner {
+	width:value;
+	margin:auto;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	box-shadow: 10px 10px 5px #888888;
+	height: 130px;
+
+}
+
+#footer {
+	width:value;
+	margin:auto;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	box-shadow: 10px 10px 5px #888888;
+	width:750px;
+	height: 25px;
+
+}
+
+#links {
+	position: relative;
+	z-index: 1;
+}
+
+/* unvisited link */
+a:link {
+    color: #7D9DB4;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #7D9DB4;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #989898;
+	text-decoration: none;
+}
+
+/* unvisited link */
+h1 a:link {
+    color: #374F60;
+	text-decoration: none;
+}
+
+/* visited link */
+h1 a:visited {
+    color: #374F60;
+	text-decoration: none;
+}
+

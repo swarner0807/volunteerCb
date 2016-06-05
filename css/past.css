@@ -1,0 +1,386 @@
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div.horizontal {
+	width:111.3%;
+	height:63px;
+}
+
+div.horizontal ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+div.horizontal li.left {
+	float:left;
+}
+
+div.horizontal li.right {
+	float:right;
+}
+
+div.horizontal a {
+	display:block;
+	width:100;
+}
+
+div.horizontal a:link,div.horizontal a:visited {
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#5e727f;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+div.horizontal a:hover,div.horizontal a:active {
+	background-color:#374F60;
+}
+
+ul.facts {
+    list-style-type: circle;
+}
+	
+body {
+	width:value;
+	margin:auto;
+	background-color: #374F60; 
+	color: #374F60;
+}
+img {
+	border:2px solid #021a40;
+}
+
+
+
+.blog{
+position:absolute;
+top:5px;
+left:5px;
+width:150px;
+height:16px;
+font-family: "Trebuchet MS";
+font-size:14px;
+color:#333;
+display:inline-block;
+border:none;
+overflow:hidden;
+}
+
+:focus{
+outline:none;
+}
+
+
+
+a.gallery{
+display:inline-block;
+width:240px;
+height:181px;
+position:relative;
+border:5px solid #fff;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+a.gallery img{
+display:block;
+width:100%;
+height:100%;
+-webkit-transition-property:width, height, top, bottom, left, right, z-index;
+-webkit-transition-duration:2s;
+-moz-transition-property:width, height, top, bottom, left, right, z-index;
+-moz-transition-duration:2s;
+-o-transition-property:width, height, top, bottom, left, right, z-index;
+-o-transition-duration:2s;
+transition-property:width, height, top, bottom, left, right, z-index;
+transition-duration:2s;
+position:absolute;
+z-index:1;
+top:0px;
+left:0px;
+cursor:pointer;
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;    
+}
+
+.gallerys{
+margin:20px auto;
+width:800px;
+height:640px;
+position:relative;
+}
+
+.closed{
+position:absolute;
+top:85px;
+right:195px;
+display:none;
+text-align:center;
+font-weight:bold;
+font-size:70px;
+color:#555;
+width:20px;
+height:20px;
+-webkit-text-shadow:0px 0px 5px #fff;
+-moz-text-shadow:0px 0px 5px #222;
+text-shadow:0px 0px 5px #fff;
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+-webkit-transform:rotate(45deg);
+cursor:pointer;
+z-index:30;
+}
+
+.closed-layer{
+display:none;
+position:absolute;
+top:140px;
+left:150px;
+width:500px;
+height:352px;
+background:transparent;
+z-index:30;
+cursor:pointer;
+}
+
+a.gallery:focus~.closed, a:focus~.closed-layer{
+display:block;
+}
+
+
+a.gallery:focus{
+border:none;
+}
+
+a.gallery:focus img{
+width:250%;
+height:250%;
+position:absolute;
+box-shadow:0 0 15px 2px #000;
+-moz-box-shadow:0 0 15px 2px #000;
+-webkit-box-shadow:0 0 15px 2px #000;
+-webkit-transition-property:width, height, top, bottom, left, right, z-index;
+-webkit-transition-duration:2s;
+-moz-transition-property:width, height, top, bottom, left, right, z-index;
+-moz-transition-duration:2s;
+-o-transition-property:width, height, top, bottom, left, right, z-index;
+-o-transition-duration:2s;
+transition-property:width, height, top, bottom, left, right, z-index;
+transition-duration:2s;
+cursor:default;
+z-index:25;
+}
+
+
+
+a.gallery:focus:nth-child(4n+1) img{
+left:150px;
+}
+
+a.gallery:focus:nth-child(4n+2) img{
+left:-50px;
+}
+
+a.gallery:focus:nth-child(4n+3) img{
+left:-250px;
+}
+
+a.gallery:focus:nth-child(4n+4) img{
+left:-460px;
+}
+
+a.gallery:focus:nth-child(-n+4) img{
+top:140px;
+}
+
+a.gallery:focus:nth-child(n+9) img{
+top:-150px;
+}
+
+a.gallery:focus:nth-child(n+13) img{
+top:-295px;
+}
+
+
+#myGallery
+{
+width: 750px !important;
+height: 550px !important;
+}
+
+
+#gva {
+	width:value;
+	margin:auto;
+	background-color: #7D9DB4;
+	width: 875px;
+	height: 1055px;
+	border:2px solid #989898;
+	
+	
+}
+#mainContent {
+	font-size:20px;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	width:750px;
+	height:579px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+	
+}
+
+
+#navBar {
+	display: inline;
+	position: relative;
+	left: -42px;
+	top: 44px;
+	z-index: 1;
+    
+}
+
+#content {
+	width:value;
+	margin:auto;
+	position: relative;
+	top: -30px;
+	width:830px;
+	
+}
+
+#header {
+	width:value;
+	margin:auto;
+	
+	width:836px;
+	height:400px;
+	
+}
+
+#banner {
+	width:value;
+	margin:auto;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	box-shadow: 10px 10px 5px #888888;
+	height: 130px;
+
+}
+
+#leftImage {
+	margin-left: 0px;
+	position: relative;
+	top: 20px; 
+}
+
+#midImage {
+	margin-left: 216px;
+	position: relative;
+	top: -165px; 
+	
+}
+
+#rightImage {
+	margin-left: 630px;
+	position: relative;
+	top: -350px; 
+}
+
+#footer {
+	width:value;
+	margin:auto;
+	border:2px solid #DEE6EB;
+	padding:10px 40px; 
+	background:#DEE6EB;
+	box-shadow: 10px 10px 5px #888888;
+	width:750px;
+	height: 25px;
+	
+
+}
+
+#links {
+	position: relative;
+	z-index: 1;
+}
+
+#spacer {
+	height: 25px;
+}
+/* unvisited link */
+a:link {
+    color: #7D9DB4;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #7D9DB4;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #989898;
+	text-decoration: none;
+}
+/* unvisited link */
+h1 a:link {
+    color: #374F60;
+	text-decoration: none;
+}
+
+/* visited link */
+h1 a:visited {
+    color: #374F60;
+	text-decoration: none;
+}
